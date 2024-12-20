@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аналитики</title>
+
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Inter, Helvetica Neue, Arial, sans-serif;">
+
+<!-- шапка -->
+<div class="container-md" >
+    <nav class="navbar navbar-expand-md fixed-top" style=":hover{ background-color: white;}">
+        <a class="navbar-brand ms-3" href="index.html" >
+        <img style="height: 40px;" src="imgs/лого_16.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img style="height: 40px;" src="imgs/лого_16.png" alt="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+            <li class="nav-item m-3">
+                <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Тест личности</a>
+            </li>
+            <li class="nav-item m-3">
+                <a class=" link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" style="border-top: 3px #4298B4;" href="index.html">Типы личности</a>
+            </li>
+            <li class="nav-item m-3">
+                <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#">Связаться</a>
+            </li>
+            <li class="nav-item m-3">
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="registration.html">Регистрация/Войти</a>
+            </li>     
+            </ul>
+        </div>
+    
+        </div>
+    </nav>
+</div>
+<!-- модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img class="modal-title fs-5" src="images/logo_mini_bw.svg" id="exampleModalLabel" alt="">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Чтобы узнать свой тип личности, нужно сначала зарегестрироваться/войти.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: white; color: #343c4b;">Пока не хочу</button>
+          <button type="button" class="btn" style="background-color: #343c4b; color: white;" onclick="window.location = 'registration.html';">Вход/Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+<div class="container-fluid py-5 mt-5">
+    <h1 class="text-center" style="font-weight: 680; font-style: normal; font-size: 64px; line-height: 68.7407px; color: rgb(52, 60, 75);"> <a href="index.html#Analytics" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Аналитики</a></h1>
+</div>
+
+    
+<div class="container-fluid">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+    <button class="nav-link btn-outline-dark active h2" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" style="color: #36263d; border: #36263d; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Стратег</button>
+    </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link btn-outline-dark h2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" style="color: #36263d; border: #36263d; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Ученый</button>
+    </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link btn-outline-dark h2" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" style="color: #36263d; border: #36263d; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Командир</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link btn-outline-dark h2" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" style="color: #36263d; border: #36263d; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Полемист</button>
+    </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active h3 py-5" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <section id="Стратег">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color:#87609a;">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Стратег</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: #36263d;">Личность INTJ</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Стратеги – это творческие и стратегические мыслители, у которых на все есть план.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/фиолетовые/ф_стратег_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#88619A"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Стратег</p>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">На вершине одиноко. Стратеги это хорошо знают — это один из самых редких и стратегически одаренных типов личностей. Стратеги составляют всего два процента населения, а женщины с таким типом личности — это особенная редкость — всего 0,8 % населения. Им часто тяжело найти единомышленников, которые смогут поддержать их неустанный интеллект и их мышление шахматиста. Люди с типом личности Стратега одарены богатым воображением и одновременно решительны, амбициозны, но скрытны, чрезвычайно любопытны, но не тратят попусту свою энергию.</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Вы не имеете права на вашу точку зрения. Вы имеете право на вашу обоснованную точку зрения. Никто не имеет права быть невежественным.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Harlan Ellison</p>
+            </div>
+            </div>
+        
+        </section>
+
+    </div>
+
+    <div class="tab-pane fade h3 py-5" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <section id="Ученый">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color:rgb(136, 97, 154);">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Ученый</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: rgb(54, 38, 61);">Личность INTP</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Ученые – это изобретатели-новаторы с неутолимой жаждой знаний.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/фиолетовые/ф_ученый_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#88619A"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Ученый</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Извлекайте уроки из вчерашнего дня, живите сегодняшним днем и надейтесь на завтрашний. Важно не прекращать задавать вопросы.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Albert Einstein</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Тип личности «Ученый» встречается довольно редко и составляет лишь три процента населения: это очень хорошо, ибо нет для таких людей нет большей неприятности, чем быть «как все». Ученые гордятся своей изобретательностью и творческой натурой, уникальным видением и живым интеллектом. Такой человек может быть известным философом, архитектором или эксцентричным профессором. Ученым принадлежат многие научные открытия в нашей истории.</p>
+            
+            </div>
+        
+        </section>
+    </div>
+
+    <div class="tab-pane fade h3 py-5" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <section id="Командир">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color:rgb(136, 97, 154);">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Командир</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: rgb(54, 38, 61);">Личность ENTJ</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Командиры – это смелые люди с хорошим воображением и силой воли, они всегда найдут путь или проложат его сами.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/фиолетовые/ф_командир_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#88619A"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Командир</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Ваше время ограничено, поэтому не тратьте его на проживание чужой жизни. Не попадайте в ловушку догмы — не живите результатами чьих-то измышлений. Не позволяйте шуму чьих-то мнений заглушать ваш внутренний голос. И, что самое важное, имейте смелость следовать своему сердцу и интуиции. Они каким-то образом уже знают, кем вы на самом деле хотите стать. Все остальное — второстепенно.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Steve Jobs</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Командиры — это прирожденные лидеры. Люди с этим типом личности объединяют в себе харизму и уверенность, они обладают авторитетом, который собирает толпы вокруг одной общей цели. В отличие от более чувствительных Протагонистов Командиры характеризуются часто безжалостным уровнем рациональности и направляют свою энергию, уверенность и острый ум на достижение запланированных целей. Вероятно, хорошо, что такие люди составляют всего три процента населения, не затмевая собой более робких и чувствительных типов личности, которые составляют остальное население мира, однако нам следует поблагодарить Командиров за многие компании и учреждения, услугами которых мы пользуемся каждый день.</p>
+            
+            </div>
+        
+        </section>
+    </div>
+
+    <div class="tab-pane fade h3 py-5" id="new-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <section id="Полемист">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color:rgb(136, 97, 154);">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Полемист</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: rgb(54, 38, 61);">Личность ENTP</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Полемисты – это любопытные и гибкие мыслители, которые не могут противостоять интеллектуальным вызовам.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/фиолетовые/ф_полемист_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#88619A"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Полемист</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Следуйте по пути небезопасному, пути независимого мыслителя. Подвергайте ваши идеи опасности критики. Высказывайте свои мысли и менее бойтесь прослыть «чокнутым», чем получить клеймо конформизма. А по вопросам, которые представляются важными для вас, вставайте, и заставьте считаться с вашим мнением любой ценой.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Thomas J. Watson</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Полемист — величайший адвокат дьявола, который успешно разрушает все аргументы и мнения на мелкие составляющие, пуская их по ветру, чтобы все видели. В отличие от более целеустремленных личностей Полемисты делают это все не потому, что пытаются достичь какой-то стратегической задачи или глубинной цели, а просто для удовольствия. Никто так не обожает процесс ментального поединка, как Полемисты, поскольку это дает им возможность потренировать свой исключительно острый ум, широкую базу познаний и способность объединять разрозненные идеи в доказательства своей правоты.</p>
+            
+            </div>
+        
+        </section>
+    </div>
+</div>
+    
+
+<!-- <section id="Полемист">
+
+    <div class="container-fluid my-5">
+    <div class="row p-5 m-0 text-start" style="background-color:rgb(136, 97, 154);">
+        <div class="col-12 col-lg-5 m-auto ">
+        <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Полемист</p>
+        <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: rgb(54, 38, 61);">Личность ENTP</p>
+        <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Полемисты – это любопытные и гибкие мыслители, которые не могут противостоять интеллектуальным вызовам.</p>
+        </div>
+        <div class="col-12 col-lg-7 text-center">
+            <img class="w-75" src="imgs/фиолетовые/ф_полемист_личная.png" alt="">
+        </div>
+
+    </div>
+    <div class="mb-5">
+    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#88619A"></polygon></svg>
+    </div>
+
+    <div class="container w-75">
+    <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Полемист</p>
+    <div class="container px-3" style="border-left: #4298B4 5px solid;">
+        <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Следуйте по пути небезопасному, пути независимого мыслителя. Подвергайте ваши идеи опасности критики. Высказывайте свои мысли и менее бойтесь прослыть «чокнутым», чем получить клеймо конформизма. А по вопросам, которые представляются важными для вас, вставайте, и заставьте считаться с вашим мнением любой ценой.</p>
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Thomas J. Watson</p>
+    </div>
+    <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Полемист — величайший адвокат дьявола, который успешно разрушает все аргументы и мнения на мелкие составляющие, пуская их по ветру, чтобы все видели. В отличие от более целеустремленных личностей Полемисты делают это все не потому, что пытаются достичь какой-то стратегической задачи или глубинной цели, а просто для удовольствия. Никто так не обожает процесс ментального поединка, как Полемисты, поскольку это дает им возможность потренировать свой исключительно острый ум, широкую базу познаний и способность объединять разрозненные идеи в доказательства своей правоты.</p>
+    
+    </div>
+
+</section> -->
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Products</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Premium Suites</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Team Assessment</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Specialized Tests</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Specialized Gui</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Testimonials</a></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Resources</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Personality Test</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Personality Types</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Articles</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Our Framework</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Country Profiles</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Surveys</a></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Help</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Contact Us</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">FAQ</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Your Orders</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Change Language</a></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Our Other Creations</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">NPQE®</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Team Assessment</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">INFJ by 16Personalities</a></p>
+      </div>
+    </div>
+  </div>
+  
+<div class="container" style="border-top: rgb(201, 201, 201) solid 1px;">
+<p class="m-3" style="font-weight: 440; font-style: normal;
+font-size: 14px; line-height: 20px; color: rgb(171, 175, 184);">©2011-2024 NERIS Analytics Limited</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

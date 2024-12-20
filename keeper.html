@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хранители</title>
+
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Inter, Helvetica Neue, Arial, sans-serif;">
+
+<!-- шапка -->
+<div class="container-md" >
+    <nav class="navbar navbar-expand-md fixed-top" style=":hover{ background-color: white;}">
+        <a class="navbar-brand ms-3" href="index.html" >
+        <img style="height: 40px;" src="imgs/лого_16.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img style="height: 40px;" src="imgs/лого_16.png" alt="">
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+            <li class="nav-item m-3">
+                <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Тест личности</a>
+            </li>
+            <li class="nav-item m-3">
+                <a class=" link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" style="border-top: 3px #4298B4;" href="index.html">Типы личности</a>
+            </li>
+            <li class="nav-item m-3">
+                <a class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="#">Связаться</a>
+            </li>
+            <li class="nav-item m-3">
+                <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="registration.html">Регистрация/Войти</a>
+            </li>     
+            </ul>
+        </div>
+    
+        </div>
+    </nav>
+</div>
+<!-- модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img class="modal-title fs-5" src="images/logo_mini_bw.svg" id="exampleModalLabel" alt="">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Чтобы узнать свой тип личности, нужно сначала зарегестрироваться/войти.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-bs-dismiss="modal" style="background-color: white; color: #343c4b;">Пока не хочу</button>
+          <button type="button" class="btn" style="background-color: #343c4b; color: white;" onclick="window.location = 'registration.html';">Вход/Регистрация</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+<div class="container-fluid py-5 mt-5">
+    <h1 class="text-center" style="font-weight: 680; font-style: normal; font-size: 64px; line-height: 68.7407px; color: rgb(52, 60, 75);"> <a href="index.html#Keeper" class="link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover">Хранители</a></h1>
+</div>
+
+    
+<div class="container-fluid">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+    <button class="nav-link btn-outline-dark active h2" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" style="color: #1A3C48; border: #1A3C48; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Администратор</button>
+    </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link btn-outline-dark h2" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" style="color: #1A3C48; border: #1A3C48; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Защитник</button>
+    </li>
+    <li class="nav-item" role="presentation">
+    <button class="nav-link btn-outline-dark h2" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" style="color: #1A3C48; border: #1A3C48; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Менеджер</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link btn-outline-dark h2" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" style="color: #1A3C48; border: #1A3C48; font-weight: 440;
+    font-style: normal;font-size: 18px; line-height: 26px;">Консул</button>
+    </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active h3 py-5" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <section id="Администратор">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color: #4298B4;">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Администратор</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color:#1A3C48;">Личность ISTJ</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Администраторы – это практичные и опирающиеся на факты личности, в надежности которых сложно усомниться.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/бирюзовые/б_администратор_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#4298B4"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Администратор</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Я заметил, что если одного человека достаточно для выполнения задачи, то двое справляются с ней куда хуже, а если дать это же задание троим, то и вовсе результата можно не добиться.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">George Washington</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Тип личности Администратор считается одним из наиболее распространенных и составляет 13% населения. Определяющие характеристики данного типа — целостность, практическая логика и неустанное следование своему долгу — делают Администраторов жизненно важным ядром многих семей и организаций, в которых ценятся традиции, правила и стандарты, например, в юридических компаниях, правительственных организациях или в армии. Люди типа личности Администратор предпочитают отвечать за свои поступки и гордиться работой, которую они выполняют — когда они работают над поставленной задачей, они не жалеют ни сил, ни энергии, выполняя задания аккуратно и терпеливо.</p>
+            
+            </div>
+        
+        </section>
+    </div>
+
+    <div class="tab-pane fade h3 py-5" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <section id="Защитник">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color: #4298B4">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Защитник</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: #1A3C48;">Личность ISFJ</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Защитники – это очень преданные и заботливые защитники, всегда готовые оберегать своих близких.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/бирюзовые/б_защитник_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#4298B4"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Защитник</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Любовь растет только когда ею делишься. Получить больше любви можно только давая ее другим.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Brian Tracy</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Тип личности Защитник весьма уникален, поскольку многие из их способностей противоречат их индивидуальным чертам. Чуткие Защитники могут прийти в ярость, если необходимо защитить свою семью или друзей; спокойные и скрытные, они, как правило, обладают хорошо развитыми навыками общения с людьми и крепких социальных взаимоотношений; и хотя они стремятся к безопасности и стабильности, такие типы личности могут быть весьма открытыми к изменениям, если чувствуют, что их понимают и уважают. Как и большинство подобных явлений, люди типа Защитник есть нечто большее, чем сумма их частей, и то, как они используют свои сильные стороны, определяет их личность.</p>
+            </div>
+        
+        </section>
+    </div>
+
+    <div class="tab-pane fade h3 py-5" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <section id="Менеджер">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color:#4298B4;">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Менеджер</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: #1A3C48">Личность ESTJ</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Менеджеры – это отличные организаторы, знающие толк в управлении вещами или людьми.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/бирюзовые/б_менеджер_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#4298B4"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Менеджер</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Хороший порядок есть основа всех вещей.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Edmund Burke</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Менеджеры представляют закон и порядок, они применяют свое понимание того, что правильно и неправильно, что приемлемо в обществе, а что нет. Они скрепляют семьи и сообщества. Твердо веря в честность, прилежность и порядочность, людей с типом личности Менеджера ценят за четкие советы и разумные инструкции, и они с удовольствием ведут за собой через сложные препятствия. Гордясь своей способностью объединять людей, Менеджеры часто становятся общественными организаторами, упорно работающими, собирающими людей на важные общественные праздники либо на защиту традиционных ценностей, скрепляющих семьи и общество.</p>
+            
+            </div>
+        
+        </section>
+    </div>
+
+    <div class="tab-pane fade h3 py-5" id="new-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <section id="Консул">
+
+            <div class="container-fluid my-5">
+            <div class="row p-5 m-0 text-start" style="background-color:#4298B4;">
+                <div class="col-12 col-lg-5 m-auto ">
+                <p style="font-weight: 680; font-style: normal; font-size: 72px; line-height: 76px; color: rgb(255, 255, 255);">Консул</p>
+                <p style="font-weight: 680; font-style: normal; font-size: 38px; line-height: 46px; color: #1A3C48">Личность ESFJ</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 20px; line-height: 30px; color: rgb(255, 255, 255);">Консулы – это очень заботливые, социальные, думающие об обществе люди, которые всегда готовы помочь.</p>
+                </div>
+                <div class="col-12 col-lg-7 text-center">
+                    <img class="w-75" src="imgs/бирюзовые/б_консул_личная.png" alt="">
+                </div>
+        
+            </div>
+            <div class="mb-5">
+            <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="48" viewBox="0 0 768 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="info__bg huge:tw-hidden tw-block tw-relative tw-h-[52px] medium:tw-h-[108px] tw-absolute tw-z-0 tw-left-0 tw-right-0 tw-bottom-0 tw-w-full tw-pb-30 medium:tw-pb-60"><polygon points="16 36 120 48 300 40 504 48 752 22 768 5.56277246e-13 1.33226763e-15 5.56887869e-13" class="tw-fill-purple" fill="#4298B4"></polygon></svg>
+            </div>
+        
+            <div class="container w-75">
+            <p class="mb-5" style="font-weight: 680; font-style: normal; font-size: 54px; line-height: 58px; color: rgb(52, 60, 75);">Консул</p>
+            <div class="container px-3" style="border-left: #4298B4 5px solid;">
+                <p style="font-weight: 680; font-style: normal; font-size: 26px; line-height: 34px; color: rgb(52, 60, 75);">Поощряйте, поднимайте и укрепляйте друг друга. Поскольку положительную энергию, направленную на одного человека, почувствуют все.</p>
+                <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(120, 127, 141);">Deborah Day</p>
+            </div>
+            <p class="mb-5" style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 28px; color: rgb(52, 60, 75);">Люди, относящиеся к типу личности «Консул», являются, за неимением более подходящего слова, популярными, ведь такой тип личности составляет двенадцать процентов населения. В старших классах Консулы — это чирлидеры и квотербэки, которые задают тон, находятся в центре внимания и ведут свои команды к победе и славе. Позже по жизни Консулы продолжают пользоваться поддержкой своих друзей и любимых, организовывая социальные встречи и делая все возможное для того, чтобы убедиться, что все счастливы.</p>
+            
+            </div>
+        
+        </section>
+    </div>
+</div>
+    
+
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Products</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Premium Suites</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Team Assessment</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Specialized Tests</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Specialized Gui</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Testimonials</a></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Resources</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Personality Test</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Personality Types</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Articles</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Our Framework</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Country Profiles</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Surveys</a></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Help</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Contact Us</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">FAQ</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Your Orders</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Change Language</a></p>
+      </div>
+      <div class="col-6 col-md-3">
+        <p style="font-weight: 440; font-style: normal; font-size: 18px; line-height: 26px; color: rgb(52, 60, 75);">Our Other Creations</p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">NPQE®</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">Team Assessment</a></p>
+        <p><a class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="#">INFJ by 16Personalities</a></p>
+      </div>
+    </div>
+</div>
+  
+<div class="container" style="border-top: rgb(201, 201, 201) solid 1px;">
+<p class="m-3" style="font-weight: 440; font-style: normal;
+font-size: 14px; line-height: 20px; color: rgb(171, 175, 184);">©2011-2024 NERIS Analytics Limited</p>
+
+</div>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+
+    <link href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: Inter, Helvetica Neue, Arial, sans-serif;">
+
+    <section class="w-100 p-4 d-flex justify-content-center pb-4">
+        <div style="width: 26rem;">
+        <div class="container" style="margin-top: 5vw;">
+            <a href="index.html"><img class="mx-auto my-5 d-block w-75" src="imgs/лого_16.png" alt="" ></a>
+            <ul class="nav nav-tabs text-center" id="myTab" role="tablist">
+                <li class="nav-item h4 " role="presentation">
+                <button class="nav-link buton active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Вход</button>
+                </li>
+                <li class="nav-item h4" role="presentation">
+                <button class="nav-link buton" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Регистрация</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active h6 py-5" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        
+        
+                    
+        
+        
+                    <form id="loginForm">
+                        <!-- Email input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="email" id="loginName" class="form-control" required>
+                            <label class="form-label" for="loginName" style="margin-left: 0px;">Ваша почта</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 114.4px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                        <!-- Password input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="password" id="loginPassword" class="form-control" required>
+                            <label class="form-label" for="loginPassword" style="margin-left: 0px;">Пароль</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
+        
+                        <!-- 2 column grid layout -->
+                        <div class="row mb-4">
+                            <div class="col-md-6 d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check mb-3 mb-md-0">
+                                <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked="" style="background-color: #1A3C48;">
+                                <label class="form-check-label" for="loginCheck"> Запомнить меня </label>
+                            </div>
+                            </div>
+        
+                            <div class="col-md-6 d-flex justify-content-center">
+                            <!-- Simple link -->
+                            <a href="#" class="h6 link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Забыли пароль?</a>
+                            </div>
+                        </div>
+        
+        
+                        <!-- Submit button -->
+                        <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-block mb-4" data-mdb-button-initialized="true" style="background-color: #4298B4; color: #ffffff;">Войти</button>
+        
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                            <p>Нет аккаунта? <a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Регистрация</a></p>
+                        </div>
+                        </form>
+        
+                        <div id="successAlert" class="alert alert-success mt-3 d-none" role="alert">
+                            Успешный вход в аккаунт! 
+                            Перейти на <a href="index.html" class="alert-link">главную страницу</a>.
+                        </div>
+                </div>
+            
+                <div class="tab-pane fade h6 py-5" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    <form id="loginForm">
+            
+                        <!-- Name input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="text" id="registerName" class="form-control" required>
+                            <label class="form-label" for="registerName" style="margin-left: 0px;">Имя</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 42.4px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+                        <!-- Username input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="text" id="registerUsername" class="form-control" required>
+                            <label class="form-label" for="registerUsername" style="margin-left: 0px;">Фамилия</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 66.4px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+                        <!-- Email input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="email" id="registerEmail" class="form-control" required>
+                            <label class="form-label" for="registerEmail" style="margin-left: 0px;">Ваша почта</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+                        <!-- Password input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="password" id="registerPassword" class="form-control" required>
+                            <label class="form-label" for="registerPassword" style="margin-left: 0px;">Пароль</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64.8px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+                        <!-- Repeat Password input -->
+                        <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                            <input type="password" id="registerRepeatPassword" class="form-control" required>
+                            <label class="form-label" for="registerRepeatPassword" style="margin-left: 0px;">Повторите пароль</label>
+                        <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 106.4px;"></div><div class="form-notch-trailing"></div></div></div>
+            
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked="" aria-describedby="registerCheckHelpText" style="background-color: #1A3C48;">
+                            <label class="form-check-label" for="registerCheck" >
+                            Я ознакомился(-ась) с условиями и согласен(-на) с ними
+                            </label>
+                        </div>
+            
+                        <!-- Submit button -->
+                        <button type="submit" data-mdb-button-init="" data-mdb-ripple-init="" class="btn btn-block mb-3" data-mdb-button-initialized="true" style="background-color: #4298B4; color: #ffffff;">Регистрация</button>
+                        </form>
+                        <div id="successAlert" class="alert alert-success mt-3 d-none" role="alert">
+                            Успешный вход в аккаунт!
+                        </div>
+                </div>
+                </div>
+        
+            </div>
+            </div>
+        </div>
+        </section>
+        
+        
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="js.js"></script>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script>
+            // Обработка отправки формы
+            document.getElementById('loginForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Предотвращаем стандартное поведение формы
+        
+                // Здесь можно добавить логику проверки входа
+                // Если вход успешен, показываем alert
+                document.getElementById('successAlert').classList.remove('d-none');
+                
+                // Очищаем форму
+                this.reset();
+            });
+        </script> 
+</body>
+</html>
